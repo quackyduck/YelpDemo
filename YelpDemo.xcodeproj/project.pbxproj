@@ -19,6 +19,12 @@
 		0AFDA448194B463600337A5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFDA430194B463600337A5C /* UIKit.framework */; };
 		0AFDA450194B463600337A5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDA44E194B463600337A5C /* InfoPlist.strings */; };
 		0AFDA452194B463600337A5C /* YelpDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDA451194B463600337A5C /* YelpDemoTests.m */; };
+		0AFDA461194B46B800337A5C /* NMSearchListingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDA45F194B46B800337A5C /* NMSearchListingsViewController.m */; };
+		0AFDA462194B46B800337A5C /* NMSearchListingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDA460194B46B800337A5C /* NMSearchListingsViewController.xib */; };
+		0AFDA4AC194B678C00337A5C /* YelpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDA4AB194B678C00337A5C /* YelpClient.m */; };
+		0AFDA4B5194B692700337A5C /* NMFilterSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDA4B3194B692700337A5C /* NMFilterSettingsViewController.m */; };
+		0AFDA4B6194B692700337A5C /* NMFilterSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDA4B4194B692700337A5C /* NMFilterSettingsViewController.xib */; };
+		0AFDA4BA194B6E6700337A5C /* NMFiltersNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDA4B8194B6E6700337A5C /* NMFiltersNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,16 @@
 		0AFDA44D194B463600337A5C /* YelpDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YelpDemoTests-Info.plist"; sourceTree = "<group>"; };
 		0AFDA44F194B463600337A5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AFDA451194B463600337A5C /* YelpDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YelpDemoTests.m; sourceTree = "<group>"; };
+		0AFDA45E194B46B800337A5C /* NMSearchListingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMSearchListingsViewController.h; sourceTree = "<group>"; };
+		0AFDA45F194B46B800337A5C /* NMSearchListingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSearchListingsViewController.m; sourceTree = "<group>"; };
+		0AFDA460194B46B800337A5C /* NMSearchListingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NMSearchListingsViewController.xib; sourceTree = "<group>"; };
+		0AFDA4AA194B678C00337A5C /* YelpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YelpClient.h; sourceTree = "<group>"; };
+		0AFDA4AB194B678C00337A5C /* YelpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YelpClient.m; sourceTree = "<group>"; };
+		0AFDA4B2194B692700337A5C /* NMFilterSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFilterSettingsViewController.h; sourceTree = "<group>"; };
+		0AFDA4B3194B692700337A5C /* NMFilterSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFilterSettingsViewController.m; sourceTree = "<group>"; };
+		0AFDA4B4194B692700337A5C /* NMFilterSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NMFilterSettingsViewController.xib; sourceTree = "<group>"; };
+		0AFDA4B7194B6E6700337A5C /* NMFiltersNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFiltersNavigationController.h; sourceTree = "<group>"; };
+		0AFDA4B8194B6E6700337A5C /* NMFiltersNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFiltersNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +123,9 @@
 		0AFDA432194B463600337A5C /* YelpDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0AFDA45D194B468C00337A5C /* Views */,
+				0AFDA45C194B468500337A5C /* Models */,
+				0AFDA45B194B467A00337A5C /* Controllers */,
 				0AFDA43B194B463600337A5C /* NMAppDelegate.h */,
 				0AFDA43C194B463600337A5C /* NMAppDelegate.m */,
 				0AFDA43E194B463600337A5C /* Images.xcassets */,
@@ -142,6 +161,37 @@
 				0AFDA44E194B463600337A5C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AFDA45B194B467A00337A5C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDA45E194B46B800337A5C /* NMSearchListingsViewController.h */,
+				0AFDA45F194B46B800337A5C /* NMSearchListingsViewController.m */,
+				0AFDA460194B46B800337A5C /* NMSearchListingsViewController.xib */,
+				0AFDA4B2194B692700337A5C /* NMFilterSettingsViewController.h */,
+				0AFDA4B3194B692700337A5C /* NMFilterSettingsViewController.m */,
+				0AFDA4B4194B692700337A5C /* NMFilterSettingsViewController.xib */,
+				0AFDA4B7194B6E6700337A5C /* NMFiltersNavigationController.h */,
+				0AFDA4B8194B6E6700337A5C /* NMFiltersNavigationController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0AFDA45C194B468500337A5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDA4AA194B678C00337A5C /* YelpClient.h */,
+				0AFDA4AB194B678C00337A5C /* YelpClient.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0AFDA45D194B468C00337A5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +270,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AFDA4B6194B692700337A5C /* NMFilterSettingsViewController.xib in Resources */,
 				0AFDA437194B463600337A5C /* InfoPlist.strings in Resources */,
+				0AFDA462194B46B800337A5C /* NMSearchListingsViewController.xib in Resources */,
 				0AFDA43F194B463600337A5C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,8 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AFDA4BA194B6E6700337A5C /* NMFiltersNavigationController.m in Sources */,
+				0AFDA4AC194B678C00337A5C /* YelpClient.m in Sources */,
+				0AFDA4B5194B692700337A5C /* NMFilterSettingsViewController.m in Sources */,
 				0AFDA439194B463600337A5C /* main.m in Sources */,
 				0AFDA43D194B463600337A5C /* NMAppDelegate.m in Sources */,
+				0AFDA461194B46B800337A5C /* NMSearchListingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +494,7 @@
 				0AFDA457194B463600337A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AFDA458194B463600337A5C /* Build configuration list for PBXNativeTarget "YelpDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +503,7 @@
 				0AFDA45A194B463600337A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
