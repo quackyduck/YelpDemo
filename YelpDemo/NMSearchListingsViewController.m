@@ -56,6 +56,26 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     // Dispose of any resources that can be recreated.
 }
 
+- (void)searchListings:(NSDictionary *)parameters {
+    
+    [self.searchParameters addEntriesFromDictionary:parameters];
+    
+    [self.client searchWithTerm:self.searchParameters success:^(AFHTTPRequestOperation *operation, id response) {
+        
+        if ([self.searchParameters valueForKey:@"offset"] == 0) {
+            [self.listingsArray removeAllObjects];
+        }
+        
+        NSArray *businesses = response[@"businesses"];
+        for (NSDictionary *business in businesses) {
+            [self.listingsArray addObject:business];
+        }
+        [self.tableView reloadData];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"error: %@", [error description]);
+    }];
+}
+
 #pragma mark - TableViewController Delegates
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.listingsArray.count == 0 ? self.listingsArray.count : self.listingsArray.count + 1;
@@ -66,19 +86,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     
     if (self.listingsArray.count > 0 && indexPath.row == self.listingsArray.count) {
-        
-        NSInteger offset = self.listingsArray.count;
-        [self.searchParameters setValue:@(offset) forKey:@"offset"];
-        
-        [self.client searchWithTerm:self.searchParameters success:^(AFHTTPRequestOperation *operation, id response) {
-            NSArray *businesses = response[@"businesses"];
-            for (NSDictionary *business in businesses) {
-                [self.listingsArray addObject:business];
-            }
-            [self.tableView reloadData];
-        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-            NSLog(@"error: %@", [error description]);
-        }];
+        [self searchListings:@{@"offset": @(self.listingsArray.count)}];
     }
     else {
         NSDictionary *business = self.listingsArray[indexPath.row];
@@ -90,25 +98,14 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 
 - (void)filterSettings:(id)sender {
     NMFilterSettingsViewController *filterSettings = [[NMFilterSettingsViewController alloc] init];
+    filterSettings.searchListingsViewController = self;
     NMFiltersNavigationController *filtersNav = [[NMFiltersNavigationController alloc] initWithRootViewController:filterSettings];
     [self.navigationController presentViewController:filtersNav animated:YES completion:nil];
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)theSearchBar {
     NSLog(@"Search item: %@", theSearchBar.text);
-    
-    [self.searchParameters setValue:theSearchBar.text forKey:@"term"];
-    
-    [self.client searchWithTerm:self.searchParameters success:^(AFHTTPRequestOperation *operation, id response) {
-        NSArray *businesses = response[@"businesses"];
-        for (NSDictionary *business in businesses) {
-            [self.listingsArray addObject:business];
-        }
-        [self.tableView reloadData];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"error: %@", [error description]);
-    }];
-    
+    [self searchListings:@{@"term": theSearchBar.text}];
     [theSearchBar endEditing:YES];
 }
 

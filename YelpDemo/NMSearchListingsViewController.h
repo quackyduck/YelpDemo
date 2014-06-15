@@ -10,6 +10,6 @@
 
 @interface NMSearchListingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
-
+- (void)searchListings:(NSDictionary *)parameters;
 
 @end

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class NMSearchListingsViewController;
+
 @interface NMFilterSettingsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) NMSearchListingsViewController *searchListingsViewController;
 
 @end
