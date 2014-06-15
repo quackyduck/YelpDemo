@@ -6,7 +6,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NMSearchListingsViewController">
             <connections>
-                <outlet property="listingsSearchBar" destination="gIO-FB-VYA" id="lUC-Sf-lAt"/>
                 <outlet property="tableView" destination="JQp-tR-58W" id="0Oz-wR-wAy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -16,40 +15,15 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JQp-tR-58W">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JQp-tR-58W">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <searchBar key="tableHeaderView" contentMode="redraw" id="gIO-FB-VYA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                        <textInputTraits key="textInputTraits"/>
-                        <connections>
-                            <outlet property="delegate" destination="-1" id="2o1-uX-4Yl"/>
-                        </connections>
-                    </searchBar>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="bottom" secondItem="JQp-tR-58W" secondAttribute="bottom" id="ODs-l4-FLs"/>
-                <constraint firstItem="JQp-tR-58W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dHc-yS-wbf"/>
-                <constraint firstAttribute="trailing" secondItem="JQp-tR-58W" secondAttribute="trailing" id="dJE-lB-jss"/>
-                <constraint firstItem="JQp-tR-58W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ham-0q-pZD"/>
-            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
-        <searchDisplayController id="bQ5-eU-9Mq">
-            <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="boolean" keyPath="displaysSearchBarInNavigationBar" value="YES"/>
-            </userDefinedRuntimeAttributes>
-            <connections>
-                <outlet property="delegate" destination="-1" id="sss-mx-c14"/>
-                <outlet property="searchContentsController" destination="-1" id="Qke-bf-gl4"/>
-                <outlet property="searchResultsDataSource" destination="-1" id="i6B-Kh-t0G"/>
-                <outlet property="searchResultsDelegate" destination="-1" id="I1E-hF-gyP"/>
-            </connections>
-        </searchDisplayController>
     </objects>
 </document>
