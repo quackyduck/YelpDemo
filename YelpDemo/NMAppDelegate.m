@@ -20,6 +20,9 @@
     NMSearchListingsViewController *slvc = [[NMSearchListingsViewController alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:slvc];
     
+    UIColor *color = [UIColor colorWithRed:196/255.0f green:18/255.0f blue:0/255.0f alpha:1.0f];
+    nvc.navigationBar.barTintColor = color;
+    
     self.window.rootViewController = nvc;
     
     self.window.backgroundColor = [UIColor whiteColor];

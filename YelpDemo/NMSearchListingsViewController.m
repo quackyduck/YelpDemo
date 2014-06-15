@@ -10,6 +10,7 @@
 #import "NMFilterSettingsViewController.h"
 #import "NMFiltersNavigationController.h"
 #import "YelpClient.h"
+#import "NMYelpListing.h"
 
 NSString * const kYelpConsumerKey = @"vxKwwcR_NMQ7WaEiQBK_CA";
 NSString * const kYelpConsumerSecret = @"33QCvh5bIF5jIHR5klQr7RtBDhQ";
@@ -68,7 +69,9 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
         
         NSArray *businesses = response[@"businesses"];
         for (NSDictionary *business in businesses) {
-            [self.listingsArray addObject:business];
+            NMYelpListing *listing = [[NMYelpListing alloc] initWithDictionary:business];
+            [self.listingsArray addObject:listing];
+            NSLog(@"Business: %@", listing);
         }
         [self.tableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -89,8 +92,8 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
         [self searchListings:@{@"offset": @(self.listingsArray.count)}];
     }
     else {
-        NSDictionary *business = self.listingsArray[indexPath.row];
-        cell.textLabel.text = business[@"name"];
+        NMYelpListing *business = self.listingsArray[indexPath.row];
+        cell.textLabel.text = business.name;
     }
     
     return cell;

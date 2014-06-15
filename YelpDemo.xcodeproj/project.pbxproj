@@ -1,1242 +1,560 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0AFDA420194B463500337A5C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0AFDA432194B463600337A5C</string>
-				<string>0AFDA44B194B463600337A5C</string>
-				<string>0AFDA42B194B463600337A5C</string>
-				<string>0AFDA42A194B463600337A5C</string>
-				<string>0B1027660C194425A6972310</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA421194B463500337A5C</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>NM</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>melo</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>0AFDA443194B463600337A5C</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>0AFDA428194B463600337A5C</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>0AFDA424194B463500337A5C</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>0AFDA420194B463500337A5C</string>
-			<key>productRefGroup</key>
-			<string>0AFDA42A194B463600337A5C</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>0AFDA428194B463600337A5C</string>
-				<string>0AFDA443194B463600337A5C</string>
-			</array>
-		</dict>
-		<key>0AFDA424194B463500337A5C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0AFDA453194B463600337A5C</string>
-				<string>0AFDA454194B463600337A5C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0AFDA425194B463600337A5C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0AFDA4BA194B6E6700337A5C</string>
-				<string>0AFDA4AC194B678C00337A5C</string>
-				<string>0AFDA4B5194B692700337A5C</string>
-				<string>0AFDA439194B463600337A5C</string>
-				<string>0AFDA43D194B463600337A5C</string>
-				<string>0AFDA461194B46B800337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0AFDA426194B463600337A5C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0AFDA42F194B463600337A5C</string>
-				<string>0AFDA431194B463600337A5C</string>
-				<string>0AFDA42D194B463600337A5C</string>
-				<string>51C8FCBB45F14759AAE85199</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0AFDA427194B463600337A5C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0AFDA4B6194B692700337A5C</string>
-				<string>0AFDA437194B463600337A5C</string>
-				<string>0AFDA462194B46B800337A5C</string>
-				<string>0AFDA43F194B463600337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0AFDA428194B463600337A5C</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>0AFDA455194B463600337A5C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>63CDF5CD442A432E9E757930</string>
-				<string>0AFDA425194B463600337A5C</string>
-				<string>0AFDA426194B463600337A5C</string>
-				<string>0AFDA427194B463600337A5C</string>
-				<string>BB4CB456A9AF470B83B5EDF1</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>YelpDemo</string>
-			<key>productName</key>
-			<string>YelpDemo</string>
-			<key>productReference</key>
-			<string>0AFDA429194B463600337A5C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>0AFDA429194B463600337A5C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>YelpDemo.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0AFDA42A194B463600337A5C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0AFDA429194B463600337A5C</string>
-				<string>0AFDA444194B463600337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA42B194B463600337A5C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0AFDA42C194B463600337A5C</string>
-				<string>0AFDA42E194B463600337A5C</string>
-				<string>0AFDA430194B463600337A5C</string>
-				<string>0AFDA445194B463600337A5C</string>
-				<string>2B5F614174044A06A9351667</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA42C194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0AFDA42D194B463600337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA42C194B463600337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA42E194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0AFDA42F194B463600337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA42E194B463600337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA430194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0AFDA431194B463600337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA430194B463600337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA432194B463600337A5C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0AFDA45D194B468C00337A5C</string>
-				<string>0AFDA45C194B468500337A5C</string>
-				<string>0AFDA45B194B467A00337A5C</string>
-				<string>0AFDA43B194B463600337A5C</string>
-				<string>0AFDA43C194B463600337A5C</string>
-				<string>0AFDA43E194B463600337A5C</string>
-				<string>0AFDA433194B463600337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>YelpDemo</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA433194B463600337A5C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0AFDA434194B463600337A5C</string>
-				<string>0AFDA435194B463600337A5C</string>
-				<string>0AFDA438194B463600337A5C</string>
-				<string>0AFDA43A194B463600337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA434194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>YelpDemo-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA435194B463600337A5C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0AFDA436194B463600337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA436194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA437194B463600337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA435194B463600337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA438194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA439194B463600337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA438194B463600337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA43A194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YelpDemo-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA43B194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NMAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA43C194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NMAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA43D194B463600337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA43C194B463600337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA43E194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA43F194B463600337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA43E194B463600337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA440194B463600337A5C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0AFDA452194B463600337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0AFDA441194B463600337A5C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0AFDA446194B463600337A5C</string>
-				<string>0AFDA448194B463600337A5C</string>
-				<string>0AFDA447194B463600337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0AFDA442194B463600337A5C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0AFDA450194B463600337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0AFDA443194B463600337A5C</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>0AFDA458194B463600337A5C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0AFDA440194B463600337A5C</string>
-				<string>0AFDA441194B463600337A5C</string>
-				<string>0AFDA442194B463600337A5C</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>0AFDA44A194B463600337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>YelpDemoTests</string>
-			<key>productName</key>
-			<string>YelpDemoTests</string>
-			<key>productReference</key>
-			<string>0AFDA444194B463600337A5C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>0AFDA444194B463600337A5C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>YelpDemoTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0AFDA445194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>0AFDA446194B463600337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA445194B463600337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA447194B463600337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA42C194B463600337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA448194B463600337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA430194B463600337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA449194B463600337A5C</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>0AFDA421194B463500337A5C</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>0AFDA428194B463600337A5C</string>
-			<key>remoteInfo</key>
-			<string>YelpDemo</string>
-		</dict>
-		<key>0AFDA44A194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>0AFDA428194B463600337A5C</string>
-			<key>targetProxy</key>
-			<string>0AFDA449194B463600337A5C</string>
-		</dict>
-		<key>0AFDA44B194B463600337A5C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0AFDA451194B463600337A5C</string>
-				<string>0AFDA44C194B463600337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>YelpDemoTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA44C194B463600337A5C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0AFDA44D194B463600337A5C</string>
-				<string>0AFDA44E194B463600337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA44D194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>YelpDemoTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA44E194B463600337A5C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0AFDA44F194B463600337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA44F194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA450194B463600337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA44E194B463600337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA451194B463600337A5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YelpDemoTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA452194B463600337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA451194B463600337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA453194B463600337A5C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0AFDA454194B463600337A5C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0AFDA455194B463600337A5C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0AFDA456194B463600337A5C</string>
-				<string>0AFDA457194B463600337A5C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0AFDA456194B463600337A5C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0B1027660C194425A6972310</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>YelpDemo/YelpDemo-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>YelpDemo/YelpDemo-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0AFDA457194B463600337A5C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0B1027660C194425A6972310</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>YelpDemo/YelpDemo-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>YelpDemo/YelpDemo-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0AFDA458194B463600337A5C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0AFDA459194B463600337A5C</string>
-				<string>0AFDA45A194B463600337A5C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0AFDA459194B463600337A5C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/YelpDemo.app/YelpDemo</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>YelpDemo/YelpDemo-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>YelpDemoTests/YelpDemoTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0AFDA45A194B463600337A5C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/YelpDemo.app/YelpDemo</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>YelpDemo/YelpDemo-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>YelpDemoTests/YelpDemoTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0AFDA45B194B467A00337A5C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0AFDA45E194B46B800337A5C</string>
-				<string>0AFDA45F194B46B800337A5C</string>
-				<string>0AFDA460194B46B800337A5C</string>
-				<string>0AFDA4B2194B692700337A5C</string>
-				<string>0AFDA4B3194B692700337A5C</string>
-				<string>0AFDA4B4194B692700337A5C</string>
-				<string>0AFDA4B7194B6E6700337A5C</string>
-				<string>0AFDA4B8194B6E6700337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA45C194B468500337A5C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0AFDA4AA194B678C00337A5C</string>
-				<string>0AFDA4AB194B678C00337A5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Models</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA45D194B468C00337A5C</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA45E194B46B800337A5C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NMSearchListingsViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA45F194B46B800337A5C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NMSearchListingsViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA460194B46B800337A5C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>NMSearchListingsViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA461194B46B800337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA45F194B46B800337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA462194B46B800337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA460194B46B800337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA4AA194B678C00337A5C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YelpClient.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA4AB194B678C00337A5C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YelpClient.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA4AC194B678C00337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA4AB194B678C00337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA4B2194B692700337A5C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NMFilterSettingsViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA4B3194B692700337A5C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NMFilterSettingsViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA4B4194B692700337A5C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>NMFilterSettingsViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA4B5194B692700337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA4B3194B692700337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA4B6194B692700337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA4B4194B692700337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0AFDA4B7194B6E6700337A5C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NMFiltersNavigationController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA4B8194B6E6700337A5C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NMFiltersNavigationController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFDA4BA194B6E6700337A5C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFDA4B8194B6E6700337A5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0B1027660C194425A6972310</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2B5F614174044A06A9351667</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>51C8FCBB45F14759AAE85199</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2B5F614174044A06A9351667</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63CDF5CD442A432E9E757930</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>BB4CB456A9AF470B83B5EDF1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>0AFDA421194B463500337A5C</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AA6C315194DF1120009B015 /* NMYelpListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA6C314194DF1120009B015 /* NMYelpListing.m */; };
+		0AFDA42D194B463600337A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFDA42C194B463600337A5C /* Foundation.framework */; };
+		0AFDA42F194B463600337A5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFDA42E194B463600337A5C /* CoreGraphics.framework */; };
+		0AFDA431194B463600337A5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFDA430194B463600337A5C /* UIKit.framework */; };
+		0AFDA437194B463600337A5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDA435194B463600337A5C /* InfoPlist.strings */; };
+		0AFDA439194B463600337A5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDA438194B463600337A5C /* main.m */; };
+		0AFDA43D194B463600337A5C /* NMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDA43C194B463600337A5C /* NMAppDelegate.m */; };
+		0AFDA43F194B463600337A5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDA43E194B463600337A5C /* Images.xcassets */; };
+		0AFDA446194B463600337A5C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFDA445194B463600337A5C /* XCTest.framework */; };
+		0AFDA447194B463600337A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFDA42C194B463600337A5C /* Foundation.framework */; };
+		0AFDA448194B463600337A5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFDA430194B463600337A5C /* UIKit.framework */; };
+		0AFDA450194B463600337A5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDA44E194B463600337A5C /* InfoPlist.strings */; };
+		0AFDA452194B463600337A5C /* YelpDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDA451194B463600337A5C /* YelpDemoTests.m */; };
+		0AFDA461194B46B800337A5C /* NMSearchListingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDA45F194B46B800337A5C /* NMSearchListingsViewController.m */; };
+		0AFDA462194B46B800337A5C /* NMSearchListingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDA460194B46B800337A5C /* NMSearchListingsViewController.xib */; };
+		0AFDA4AC194B678C00337A5C /* YelpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDA4AB194B678C00337A5C /* YelpClient.m */; };
+		0AFDA4B5194B692700337A5C /* NMFilterSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDA4B3194B692700337A5C /* NMFilterSettingsViewController.m */; };
+		0AFDA4B6194B692700337A5C /* NMFilterSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDA4B4194B692700337A5C /* NMFilterSettingsViewController.xib */; };
+		0AFDA4BA194B6E6700337A5C /* NMFiltersNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDA4B8194B6E6700337A5C /* NMFiltersNavigationController.m */; };
+		51C8FCBB45F14759AAE85199 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5F614174044A06A9351667 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AFDA449194B463600337A5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AFDA421194B463500337A5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AFDA428194B463600337A5C;
+			remoteInfo = YelpDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AA6C313194DF1120009B015 /* NMYelpListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMYelpListing.h; sourceTree = "<group>"; };
+		0AA6C314194DF1120009B015 /* NMYelpListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMYelpListing.m; sourceTree = "<group>"; };
+		0AFDA429194B463600337A5C /* YelpDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AFDA42C194B463600337A5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0AFDA42E194B463600337A5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0AFDA430194B463600337A5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0AFDA434194B463600337A5C /* YelpDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YelpDemo-Info.plist"; sourceTree = "<group>"; };
+		0AFDA436194B463600337A5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AFDA438194B463600337A5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AFDA43A194B463600337A5C /* YelpDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YelpDemo-Prefix.pch"; sourceTree = "<group>"; };
+		0AFDA43B194B463600337A5C /* NMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMAppDelegate.h; sourceTree = "<group>"; };
+		0AFDA43C194B463600337A5C /* NMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMAppDelegate.m; sourceTree = "<group>"; };
+		0AFDA43E194B463600337A5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0AFDA444194B463600337A5C /* YelpDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AFDA445194B463600337A5C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0AFDA44D194B463600337A5C /* YelpDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YelpDemoTests-Info.plist"; sourceTree = "<group>"; };
+		0AFDA44F194B463600337A5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AFDA451194B463600337A5C /* YelpDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YelpDemoTests.m; sourceTree = "<group>"; };
+		0AFDA45E194B46B800337A5C /* NMSearchListingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMSearchListingsViewController.h; sourceTree = "<group>"; };
+		0AFDA45F194B46B800337A5C /* NMSearchListingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSearchListingsViewController.m; sourceTree = "<group>"; };
+		0AFDA460194B46B800337A5C /* NMSearchListingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NMSearchListingsViewController.xib; sourceTree = "<group>"; };
+		0AFDA4AA194B678C00337A5C /* YelpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YelpClient.h; sourceTree = "<group>"; };
+		0AFDA4AB194B678C00337A5C /* YelpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YelpClient.m; sourceTree = "<group>"; };
+		0AFDA4B2194B692700337A5C /* NMFilterSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFilterSettingsViewController.h; sourceTree = "<group>"; };
+		0AFDA4B3194B692700337A5C /* NMFilterSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFilterSettingsViewController.m; sourceTree = "<group>"; };
+		0AFDA4B4194B692700337A5C /* NMFilterSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NMFilterSettingsViewController.xib; sourceTree = "<group>"; };
+		0AFDA4B7194B6E6700337A5C /* NMFiltersNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFiltersNavigationController.h; sourceTree = "<group>"; };
+		0AFDA4B8194B6E6700337A5C /* NMFiltersNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFiltersNavigationController.m; sourceTree = "<group>"; };
+		0B1027660C194425A6972310 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		2B5F614174044A06A9351667 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AFDA426194B463600337A5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFDA42F194B463600337A5C /* CoreGraphics.framework in Frameworks */,
+				0AFDA431194B463600337A5C /* UIKit.framework in Frameworks */,
+				0AFDA42D194B463600337A5C /* Foundation.framework in Frameworks */,
+				51C8FCBB45F14759AAE85199 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AFDA441194B463600337A5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFDA446194B463600337A5C /* XCTest.framework in Frameworks */,
+				0AFDA448194B463600337A5C /* UIKit.framework in Frameworks */,
+				0AFDA447194B463600337A5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AFDA420194B463500337A5C = {
+			isa = PBXGroup;
+			children = (
+				0AFDA432194B463600337A5C /* YelpDemo */,
+				0AFDA44B194B463600337A5C /* YelpDemoTests */,
+				0AFDA42B194B463600337A5C /* Frameworks */,
+				0AFDA42A194B463600337A5C /* Products */,
+				0B1027660C194425A6972310 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		0AFDA42A194B463600337A5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDA429194B463600337A5C /* YelpDemo.app */,
+				0AFDA444194B463600337A5C /* YelpDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AFDA42B194B463600337A5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDA42C194B463600337A5C /* Foundation.framework */,
+				0AFDA42E194B463600337A5C /* CoreGraphics.framework */,
+				0AFDA430194B463600337A5C /* UIKit.framework */,
+				0AFDA445194B463600337A5C /* XCTest.framework */,
+				2B5F614174044A06A9351667 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AFDA432194B463600337A5C /* YelpDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDA45D194B468C00337A5C /* Views */,
+				0AFDA45C194B468500337A5C /* Models */,
+				0AFDA45B194B467A00337A5C /* Controllers */,
+				0AFDA43B194B463600337A5C /* NMAppDelegate.h */,
+				0AFDA43C194B463600337A5C /* NMAppDelegate.m */,
+				0AFDA43E194B463600337A5C /* Images.xcassets */,
+				0AFDA433194B463600337A5C /* Supporting Files */,
+			);
+			path = YelpDemo;
+			sourceTree = "<group>";
+		};
+		0AFDA433194B463600337A5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDA434194B463600337A5C /* YelpDemo-Info.plist */,
+				0AFDA435194B463600337A5C /* InfoPlist.strings */,
+				0AFDA438194B463600337A5C /* main.m */,
+				0AFDA43A194B463600337A5C /* YelpDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AFDA44B194B463600337A5C /* YelpDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDA451194B463600337A5C /* YelpDemoTests.m */,
+				0AFDA44C194B463600337A5C /* Supporting Files */,
+			);
+			path = YelpDemoTests;
+			sourceTree = "<group>";
+		};
+		0AFDA44C194B463600337A5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDA44D194B463600337A5C /* YelpDemoTests-Info.plist */,
+				0AFDA44E194B463600337A5C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AFDA45B194B467A00337A5C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDA45E194B46B800337A5C /* NMSearchListingsViewController.h */,
+				0AFDA45F194B46B800337A5C /* NMSearchListingsViewController.m */,
+				0AFDA460194B46B800337A5C /* NMSearchListingsViewController.xib */,
+				0AFDA4B2194B692700337A5C /* NMFilterSettingsViewController.h */,
+				0AFDA4B3194B692700337A5C /* NMFilterSettingsViewController.m */,
+				0AFDA4B4194B692700337A5C /* NMFilterSettingsViewController.xib */,
+				0AFDA4B7194B6E6700337A5C /* NMFiltersNavigationController.h */,
+				0AFDA4B8194B6E6700337A5C /* NMFiltersNavigationController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0AFDA45C194B468500337A5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDA4AA194B678C00337A5C /* YelpClient.h */,
+				0AFDA4AB194B678C00337A5C /* YelpClient.m */,
+				0AA6C313194DF1120009B015 /* NMYelpListing.h */,
+				0AA6C314194DF1120009B015 /* NMYelpListing.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0AFDA45D194B468C00337A5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AFDA428194B463600337A5C /* YelpDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AFDA455194B463600337A5C /* Build configuration list for PBXNativeTarget "YelpDemo" */;
+			buildPhases = (
+				63CDF5CD442A432E9E757930 /* Check Pods Manifest.lock */,
+				0AFDA425194B463600337A5C /* Sources */,
+				0AFDA426194B463600337A5C /* Frameworks */,
+				0AFDA427194B463600337A5C /* Resources */,
+				BB4CB456A9AF470B83B5EDF1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YelpDemo;
+			productName = YelpDemo;
+			productReference = 0AFDA429194B463600337A5C /* YelpDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AFDA443194B463600337A5C /* YelpDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AFDA458194B463600337A5C /* Build configuration list for PBXNativeTarget "YelpDemoTests" */;
+			buildPhases = (
+				0AFDA440194B463600337A5C /* Sources */,
+				0AFDA441194B463600337A5C /* Frameworks */,
+				0AFDA442194B463600337A5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AFDA44A194B463600337A5C /* PBXTargetDependency */,
+			);
+			name = YelpDemoTests;
+			productName = YelpDemoTests;
+			productReference = 0AFDA444194B463600337A5C /* YelpDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AFDA421194B463500337A5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = melo;
+				TargetAttributes = {
+					0AFDA443194B463600337A5C = {
+						TestTargetID = 0AFDA428194B463600337A5C;
+					};
+				};
+			};
+			buildConfigurationList = 0AFDA424194B463500337A5C /* Build configuration list for PBXProject "YelpDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0AFDA420194B463500337A5C;
+			productRefGroup = 0AFDA42A194B463600337A5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AFDA428194B463600337A5C /* YelpDemo */,
+				0AFDA443194B463600337A5C /* YelpDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AFDA427194B463600337A5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFDA4B6194B692700337A5C /* NMFilterSettingsViewController.xib in Resources */,
+				0AFDA437194B463600337A5C /* InfoPlist.strings in Resources */,
+				0AFDA462194B46B800337A5C /* NMSearchListingsViewController.xib in Resources */,
+				0AFDA43F194B463600337A5C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AFDA442194B463600337A5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFDA450194B463600337A5C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63CDF5CD442A432E9E757930 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB4CB456A9AF470B83B5EDF1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AFDA425194B463600337A5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFDA4BA194B6E6700337A5C /* NMFiltersNavigationController.m in Sources */,
+				0AFDA4AC194B678C00337A5C /* YelpClient.m in Sources */,
+				0AFDA4B5194B692700337A5C /* NMFilterSettingsViewController.m in Sources */,
+				0AFDA439194B463600337A5C /* main.m in Sources */,
+				0AFDA43D194B463600337A5C /* NMAppDelegate.m in Sources */,
+				0AFDA461194B46B800337A5C /* NMSearchListingsViewController.m in Sources */,
+				0AA6C315194DF1120009B015 /* NMYelpListing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AFDA440194B463600337A5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFDA452194B463600337A5C /* YelpDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AFDA44A194B463600337A5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AFDA428194B463600337A5C /* YelpDemo */;
+			targetProxy = 0AFDA449194B463600337A5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0AFDA435194B463600337A5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AFDA436194B463600337A5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0AFDA44E194B463600337A5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AFDA44F194B463600337A5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AFDA453194B463600337A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0AFDA454194B463600337A5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AFDA456194B463600337A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B1027660C194425A6972310 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YelpDemo/YelpDemo-Prefix.pch";
+				INFOPLIST_FILE = "YelpDemo/YelpDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0AFDA457194B463600337A5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B1027660C194425A6972310 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YelpDemo/YelpDemo-Prefix.pch";
+				INFOPLIST_FILE = "YelpDemo/YelpDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0AFDA459194B463600337A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YelpDemo.app/YelpDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YelpDemo/YelpDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YelpDemoTests/YelpDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0AFDA45A194B463600337A5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YelpDemo.app/YelpDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YelpDemo/YelpDemo-Prefix.pch";
+				INFOPLIST_FILE = "YelpDemoTests/YelpDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AFDA424194B463500337A5C /* Build configuration list for PBXProject "YelpDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AFDA453194B463600337A5C /* Debug */,
+				0AFDA454194B463600337A5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AFDA455194B463600337A5C /* Build configuration list for PBXNativeTarget "YelpDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AFDA456194B463600337A5C /* Debug */,
+				0AFDA457194B463600337A5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AFDA458194B463600337A5C /* Build configuration list for PBXNativeTarget "YelpDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AFDA459194B463600337A5C /* Debug */,
+				0AFDA45A194B463600337A5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AFDA421194B463500337A5C /* Project object */;
+}
