@@ -62,6 +62,8 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     self.tableView.delegate = self;
     self.listingsSearchBar.delegate = self;
     
+    [self.tableView setSeparatorInset:UIEdgeInsetsZero];
+    
     self.listingsSearchBar.tintColor = [UIColor blackColor];
     self.navigationItem.titleView = self.listingsSearchBar;
     
@@ -175,6 +177,8 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
         } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
             NSLog(@"Failed to load Yelp item's pic.");
         }];
+        
+        [cell setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
     
         return cell;
     }
@@ -184,6 +188,11 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     NMFilterSettingsViewController *filterSettings = [[NMFilterSettingsViewController alloc] init];
     filterSettings.searchListingsViewController = self;
     NMFiltersNavigationController *filtersNav = [[NMFiltersNavigationController alloc] initWithRootViewController:filterSettings];
+    
+    UIColor *color = [UIColor colorWithRed:196/255.0f green:18/255.0f blue:0/255.0f alpha:1.0f];
+    filtersNav.navigationBar.barTintColor = color;
+    filtersNav.navigationBar.tintColor = [UIColor whiteColor];
+    
     [self.navigationController presentViewController:filtersNav animated:YES completion:nil];
 }
 
