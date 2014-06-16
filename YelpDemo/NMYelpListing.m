@@ -18,7 +18,11 @@
         self.imageURL = dictionary[@"image_url"];
         self.starsURL = dictionary[@"rating_img_url"];
         self.reviewCount = [dictionary[@"review_count"] intValue];
-        self.price = @"$$";
+
+        // random number of dollar signs [1:4]
+        NSInteger dollarSigns = (arc4random() % 4) + 1;
+        self.price = [@"" stringByPaddingToLength:dollarSigns withString:@"$" startingAtIndex:0];
+
         self.distance = @"0.07 mi";
         self.categories = dictionary[@"categories"];
     }
