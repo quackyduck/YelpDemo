@@ -51,7 +51,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111 Reviews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inl-gv-ELv">
-                        <rect key="frame" x="182" y="29" width="71" height="15"/>
+                        <rect key="frame" x="182" y="29" width="225" height="15"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,8 +64,8 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfJ-Gn-ihc">
-                        <rect key="frame" x="393" y="31" width="14" height="15"/>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfJ-Gn-ihc">
+                        <rect key="frame" x="393" y="28" width="14" height="15"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -76,8 +76,11 @@
                     <constraint firstItem="1xP-8L-94p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="1YB-7Z-kPq"/>
                     <constraint firstItem="lb0-xA-jWq" firstAttribute="leading" secondItem="p8n-2B-Sox" secondAttribute="leading" id="76p-zC-rR7"/>
                     <constraint firstAttribute="bottom" secondItem="p8n-2B-Sox" secondAttribute="bottom" constant="8" id="8uR-sz-6T6"/>
+                    <constraint firstItem="aFe-x6-6Tz" firstAttribute="trailing" secondItem="JfJ-Gn-ihc" secondAttribute="trailing" id="GFg-EA-Ij1"/>
+                    <constraint firstItem="aFe-x6-6Tz" firstAttribute="trailing" secondItem="inl-gv-ELv" secondAttribute="trailing" id="JHP-Gd-lS1"/>
                     <constraint firstItem="x56-Py-VDg" firstAttribute="leading" secondItem="1xP-8L-94p" secondAttribute="trailing" constant="8" id="JQN-Uf-poS"/>
                     <constraint firstItem="1xP-8L-94p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="PKd-CK-Fpx"/>
+                    <constraint firstItem="JfJ-Gn-ihc" firstAttribute="top" secondItem="aFe-x6-6Tz" secondAttribute="bottom" constant="3" id="R6K-gK-k5h"/>
                     <constraint firstItem="lb0-xA-jWq" firstAttribute="leading" secondItem="x56-Py-VDg" secondAttribute="leading" id="XnQ-yR-Mv6"/>
                     <constraint firstItem="lb0-xA-jWq" firstAttribute="top" secondItem="x56-Py-VDg" secondAttribute="bottom" constant="2" id="ahO-xI-6rO"/>
                     <constraint firstItem="x56-Py-VDg" firstAttribute="top" secondItem="inl-gv-ELv" secondAttribute="top" id="ajK-S5-XQ6"/>
