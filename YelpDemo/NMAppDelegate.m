@@ -22,6 +22,9 @@
     
     UIColor *color = [UIColor colorWithRed:196/255.0f green:18/255.0f blue:0/255.0f alpha:1.0f];
     nvc.navigationBar.barTintColor = color;
+    nvc.navigationBar.tintColor = [UIColor whiteColor];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     self.window.rootViewController = nvc;
     

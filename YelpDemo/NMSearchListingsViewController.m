@@ -16,6 +16,8 @@
 #import <AFNetworking/AFNetworking.h>
 #import "UIImageView+AFNetworking.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 NSString * const kYelpConsumerKey = @"vxKwwcR_NMQ7WaEiQBK_CA";
 NSString * const kYelpConsumerSecret = @"33QCvh5bIF5jIHR5klQr7RtBDhQ";
 NSString * const kYelpToken = @"uRcRswHFYa1VkDrGV6LAW2F8clGh5JHV";
@@ -60,9 +62,11 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     self.tableView.delegate = self;
     self.listingsSearchBar.delegate = self;
     
+    self.listingsSearchBar.tintColor = [UIColor blackColor];
     self.navigationItem.titleView = self.listingsSearchBar;
+    
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Filter" style:UIBarButtonItemStylePlain target:self action:@selector(filterSettings:)];
-
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -96,7 +100,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 
 #pragma mark - TableViewController Delegates
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.listingsArray.count;// == 0 ? self.listingsArray.count : self.listingsArray.count + 1;
+    return self.listingsArray.count == 0 ? self.listingsArray.count : self.listingsArray.count + 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -113,6 +117,9 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.listingsArray.count > 0 && indexPath.row == self.listingsArray.count) {
+        return 88.f;
+    }
     
     NMYelpListing *business = self.listingsArray[indexPath.row];
     
@@ -124,53 +131,53 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    if (self.listingsArray.count > 0 && indexPath.row == self.listingsArray.count) {
-//        UITableViewCell *cell = [[UITableViewCell alloc] init];
-//        [self searchListings:@{@"offset": @(self.listingsArray.count)}];
-//        return cell;
-//    }
-//    else {
-    NMYelpListing *business = self.listingsArray[indexPath.row];
-    NMYelpListingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"yelpCell"];
-    [self configureCell:cell forListing:business];
-    
-    NSURL *imageURL = [NSURL URLWithString:business.imageURL];
-    NSURLRequest *imageRequest = [NSURLRequest requestWithURL:imageURL];
-    
-    [cell.listingImageView setImageWithURLRequest:imageRequest placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
-        cell.listingImageView.alpha = 0.0;
+    if (self.listingsArray.count > 0 && indexPath.row == self.listingsArray.count) {
+        UITableViewCell *cell = [[UITableViewCell alloc] init];
+        [self searchListings:@{@"offset": @(self.listingsArray.count)}];
+        return cell;
+    }
+    else {
+        NMYelpListing *business = self.listingsArray[indexPath.row];
+        NMYelpListingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"yelpCell"];
+        [self configureCell:cell forListing:business];
         
-        UIGraphicsBeginImageContextWithOptions(cell.listingImageView.bounds.size, NO, [UIScreen mainScreen].scale);
-        [[UIBezierPath bezierPathWithRoundedRect:cell.listingImageView.bounds cornerRadius:4.0] addClip];
-        [image drawInRect:cell.listingImageView.bounds];
+        NSURL *imageURL = [NSURL URLWithString:business.imageURL];
+        NSURLRequest *imageRequest = [NSURLRequest requestWithURL:imageURL];
         
-        cell.listingImageView.image = UIGraphicsGetImageFromCurrentImageContext();
+        [cell.listingImageView setImageWithURLRequest:imageRequest placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+            cell.listingImageView.alpha = 0.0;
+            
+            UIGraphicsBeginImageContextWithOptions(cell.listingImageView.bounds.size, NO, [UIScreen mainScreen].scale);
+            [[UIBezierPath bezierPathWithRoundedRect:cell.listingImageView.bounds cornerRadius:4.0] addClip];
+            [image drawInRect:cell.listingImageView.bounds];
+            
+            cell.listingImageView.image = UIGraphicsGetImageFromCurrentImageContext();
+            
+            [UIView animateWithDuration:0.25
+                             animations:^{
+                                 cell.listingImageView.alpha = 1.0;
+                             }];
+        } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+            NSLog(@"Failed to load Yelp item's pic.");
+        }];
         
-        [UIView animateWithDuration:0.25
-                         animations:^{
-                             cell.listingImageView.alpha = 1.0;
-                         }];
-    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
-        NSLog(@"Failed to load Yelp item's pic.");
-    }];
-    
-    NSURL *ratingsURL = [NSURL URLWithString:business.starsURL];
-    NSURLRequest *ratingsRequest = [NSURLRequest requestWithURL:ratingsURL];
-    
-    [cell.ratingsImageView setImageWithURLRequest:ratingsRequest placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
-        cell.ratingsImageView.alpha = 0.0;
-        cell.ratingsImageView.image = image;
+        NSURL *ratingsURL = [NSURL URLWithString:business.starsURL];
+        NSURLRequest *ratingsRequest = [NSURLRequest requestWithURL:ratingsURL];
         
-        [UIView animateWithDuration:0.25
-                         animations:^{
-                             cell.ratingsImageView.alpha = 1.0;
-                         }];
-    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
-        NSLog(@"Failed to load Yelp item's pic.");
-    }];
+        [cell.ratingsImageView setImageWithURLRequest:ratingsRequest placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+            cell.ratingsImageView.alpha = 0.0;
+            cell.ratingsImageView.image = image;
+            
+            [UIView animateWithDuration:0.25
+                             animations:^{
+                                 cell.ratingsImageView.alpha = 1.0;
+                             }];
+        } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+            NSLog(@"Failed to load Yelp item's pic.");
+        }];
     
         return cell;
-//    }
+    }
 }
 
 - (void)filterSettings:(id)sender {
