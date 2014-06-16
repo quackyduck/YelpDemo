@@ -37,15 +37,18 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1489 Folsom St, SoMa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lb0-xA-jWq">
-                        <rect key="frame" x="87" y="48" width="128" height="15"/>
+                        <rect key="frame" x="87" y="48" width="263" height="15"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8n-2B-Sox">
-                        <rect key="frame" x="87" y="65" width="24" height="15"/>
+                        <rect key="frame" x="87" y="65" width="263" height="15"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="263" id="HYl-1S-iUS"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -88,6 +91,7 @@
                     <constraint firstItem="inl-gv-ELv" firstAttribute="leading" secondItem="x56-Py-VDg" secondAttribute="trailing" constant="8" id="dQk-71-nuq"/>
                     <constraint firstItem="pS9-pp-LeS" firstAttribute="top" secondItem="aFe-x6-6Tz" secondAttribute="top" constant="-1" id="gru-Wp-ho8"/>
                     <constraint firstItem="x56-Py-VDg" firstAttribute="top" secondItem="pS9-pp-LeS" secondAttribute="bottom" constant="2" id="idd-Zu-Akf"/>
+                    <constraint firstItem="lb0-xA-jWq" firstAttribute="trailing" secondItem="p8n-2B-Sox" secondAttribute="trailing" id="lLu-8t-sO7"/>
                     <constraint firstItem="pS9-pp-LeS" firstAttribute="leading" secondItem="1xP-8L-94p" secondAttribute="trailing" constant="8" id="rvT-iS-MDf"/>
                     <constraint firstAttribute="trailing" secondItem="aFe-x6-6Tz" secondAttribute="trailing" constant="9" id="sWo-bY-tLZ"/>
                     <constraint firstItem="pS9-pp-LeS" firstAttribute="top" secondItem="1xP-8L-94p" secondAttribute="top" id="u2v-ac-Z7p"/>

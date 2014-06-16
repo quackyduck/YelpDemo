@@ -14,12 +14,13 @@
     self = [self init];
     if (self) {
         self.name = dictionary[@"name"];
-        self.address = [NSArray arrayWithArray:dictionary[@"address"]];
+        self.address = [NSArray arrayWithArray:dictionary[@"location"][@"display_address"]];
         self.imageURL = dictionary[@"image_url"];
         self.starsURL = dictionary[@"rating_img_url"];
         self.reviewCount = [dictionary[@"review_count"] intValue];
         self.price = @"$$";
         self.distance = @"0.07 mi";
+        self.categories = dictionary[@"categories"];
     }
     
     return self;
@@ -51,8 +52,22 @@
     [coder encodeInteger:self.reviewCount forKey:@"review_count"];
 }
 
+- (NSString *)displayAddress {
+    return [NSString stringWithFormat:@"%@, %@", self.address[0], self.address[1]];
+    
+}
+
+- (NSString *)displayCategories {
+    NSMutableArray *categories = [[NSMutableArray alloc] initWithCapacity:0];
+    for (NSArray *category in self.categories) {
+        [categories addObject:category[0]];
+    }
+    
+    return [categories componentsJoinedByString:@", "];
+}
+
 - (NSString *)description {
-    return [NSString stringWithFormat:@"name: %@, address %@, imageURL: %@, starsURL: %@, price: %@, distance: %@, reviewCount: %ld", self.name, self.address, self.imageURL, self.starsURL, self.price, self.distance, (long)self.reviewCount];
+    return [NSString stringWithFormat:@"name: %@, address %@, imageURL: %@, starsURL: %@, price: %@, distance: %@, reviewCount: %ld, categories: %@", self.name, self.address, self.imageURL, self.starsURL, self.price, self.distance, (long)self.reviewCount, self.displayCategories];
 }
 
 

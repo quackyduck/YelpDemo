@@ -17,7 +17,10 @@
 @property NSInteger reviewCount;
 @property (copy, nonatomic) NSString *price;
 @property (copy, nonatomic) NSString *distance;
+@property (strong, nonatomic) NSArray *categories;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
+- (NSString *)displayAddress;
+- (NSString *)displayCategories;
 
 @end

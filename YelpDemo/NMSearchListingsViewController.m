@@ -87,6 +87,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
             [self.listingsArray addObject:listing];
             NSLog(@"Business: %@", listing);
         }
+        NSLog(@"%@", businesses);
         [self.tableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"error: %@", [error description]);
@@ -102,19 +103,49 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     return 88.f;
 }
 
-- (void)configureCell:(NMYelpListingCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+- (void)configureCell:(NMYelpListingCell *)cell forListing:(NMYelpListing *)listing {
+    
+    cell.nameLabel.text = listing.name;
+    cell.addressLabel.text = [listing displayAddress];
+    cell.priceLabel.text = listing.price;
+    cell.distanceLabel.text = listing.distance;
+    cell.categoriesLabel.text = [listing displayCategories];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     NMYelpListing *business = self.listingsArray[indexPath.row];
-    cell.nameLabel.text = business.name;
-    cell.addressLabel.text = @"406 Folsom St, SoMa";
-    cell.priceLabel.text = business.price;
-    cell.distanceLabel.text = business.distance;
+    
+    [self configureCell:self.offscreenCell forListing:business];
+    [self.offscreenCell layoutSubviews];
+    CGFloat height = [self.offscreenCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    return height + 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+//    if (self.listingsArray.count > 0 && indexPath.row == self.listingsArray.count) {
+//        UITableViewCell *cell = [[UITableViewCell alloc] init];
+//        [self searchListings:@{@"offset": @(self.listingsArray.count)}];
+//        return cell;
+//    }
+//    else {
+    NMYelpListing *business = self.listingsArray[indexPath.row];
+    NMYelpListingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"yelpCell"];
+    [self configureCell:cell forListing:business];
     
     NSURL *imageURL = [NSURL URLWithString:business.imageURL];
     NSURLRequest *imageRequest = [NSURLRequest requestWithURL:imageURL];
     
     [cell.listingImageView setImageWithURLRequest:imageRequest placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
         cell.listingImageView.alpha = 0.0;
-        cell.listingImageView.image = image;
+        
+        UIGraphicsBeginImageContextWithOptions(cell.listingImageView.bounds.size, NO, [UIScreen mainScreen].scale);
+        [[UIBezierPath bezierPathWithRoundedRect:cell.listingImageView.bounds cornerRadius:4.0] addClip];
+        [image drawInRect:cell.listingImageView.bounds];
+        
+        cell.listingImageView.image = UIGraphicsGetImageFromCurrentImageContext();
+        
         [UIView animateWithDuration:0.25
                          animations:^{
                              cell.listingImageView.alpha = 1.0;
@@ -129,6 +160,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     [cell.ratingsImageView setImageWithURLRequest:ratingsRequest placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
         cell.ratingsImageView.alpha = 0.0;
         cell.ratingsImageView.image = image;
+        
         [UIView animateWithDuration:0.25
                          animations:^{
                              cell.ratingsImageView.alpha = 1.0;
@@ -136,31 +168,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
         NSLog(@"Failed to load Yelp item's pic.");
     }];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [self configureCell:self.offscreenCell atIndexPath:indexPath];
-    [self.offscreenCell layoutSubviews];
-    CGFloat height = [self.offscreenCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-    
-    NSLog(@"Dynamic height: %f", height);
-    
-    return height + 1;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-//    if (self.listingsArray.count > 0 && indexPath.row == self.listingsArray.count) {
-//        UITableViewCell *cell = [[UITableViewCell alloc] init];
-//        [self searchListings:@{@"offset": @(self.listingsArray.count)}];
-//        return cell;
-//    }
-//    else {
-        NMYelpListingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"yelpCell"];
-    [self configureCell:cell atIndexPath:indexPath];
-    
-        
         return cell;
 //    }
 }
