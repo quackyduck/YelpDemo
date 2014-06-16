@@ -17,7 +17,7 @@
     
     
     
-    NMSearchListingsViewController *slvc = [[NMSearchListingsViewController alloc] init];
+    NMSearchListingsViewController *slvc = [[NMSearchListingsViewController alloc] initWithNibName:@"NMSearchListingsViewController" bundle:nil];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:slvc];
     
     UIColor *color = [UIColor colorWithRed:196/255.0f green:18/255.0f blue:0/255.0f alpha:1.0f];

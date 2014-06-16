@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0AA6C315194DF1120009B015 /* NMYelpListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA6C314194DF1120009B015 /* NMYelpListing.m */; };
+		0AA6C31F194DFFC30009B015 /* NMYelpListingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6C31D194DFFC30009B015 /* NMYelpListingCell.xib */; };
+		0AA6C322194E3F1B0009B015 /* NMYelpListingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA6C321194E3F1B0009B015 /* NMYelpListingCell.m */; };
 		0AFDA42D194B463600337A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFDA42C194B463600337A5C /* Foundation.framework */; };
 		0AFDA42F194B463600337A5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFDA42E194B463600337A5C /* CoreGraphics.framework */; };
 		0AFDA431194B463600337A5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFDA430194B463600337A5C /* UIKit.framework */; };
@@ -42,6 +44,9 @@
 /* Begin PBXFileReference section */
 		0AA6C313194DF1120009B015 /* NMYelpListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMYelpListing.h; sourceTree = "<group>"; };
 		0AA6C314194DF1120009B015 /* NMYelpListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMYelpListing.m; sourceTree = "<group>"; };
+		0AA6C31D194DFFC30009B015 /* NMYelpListingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NMYelpListingCell.xib; sourceTree = "<group>"; };
+		0AA6C320194E3F1B0009B015 /* NMYelpListingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMYelpListingCell.h; sourceTree = "<group>"; };
+		0AA6C321194E3F1B0009B015 /* NMYelpListingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMYelpListingCell.m; sourceTree = "<group>"; };
 		0AFDA429194B463600337A5C /* YelpDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFDA42C194B463600337A5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0AFDA42E194B463600337A5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -201,6 +206,9 @@
 		0AFDA45D194B468C00337A5C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0AA6C320194E3F1B0009B015 /* NMYelpListingCell.h */,
+				0AA6C321194E3F1B0009B015 /* NMYelpListingCell.m */,
+				0AA6C31D194DFFC30009B015 /* NMYelpListingCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -286,6 +294,7 @@
 				0AFDA4B6194B692700337A5C /* NMFilterSettingsViewController.xib in Resources */,
 				0AFDA437194B463600337A5C /* InfoPlist.strings in Resources */,
 				0AFDA462194B46B800337A5C /* NMSearchListingsViewController.xib in Resources */,
+				0AA6C31F194DFFC30009B015 /* NMYelpListingCell.xib in Resources */,
 				0AFDA43F194B463600337A5C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +352,7 @@
 				0AFDA4B5194B692700337A5C /* NMFilterSettingsViewController.m in Sources */,
 				0AFDA439194B463600337A5C /* main.m in Sources */,
 				0AFDA43D194B463600337A5C /* NMAppDelegate.m in Sources */,
+				0AA6C322194E3F1B0009B015 /* NMYelpListingCell.m in Sources */,
 				0AFDA461194B46B800337A5C /* NMSearchListingsViewController.m in Sources */,
 				0AA6C315194DF1120009B015 /* NMYelpListing.m in Sources */,
 			);
