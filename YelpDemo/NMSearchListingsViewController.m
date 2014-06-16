@@ -140,13 +140,13 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    [self configureCell:self.offscreenCell atIndexPath:indexPath];
-//    [self.offscreenCell layoutSubviews];
-//    CGFloat height = self.offscreenCell.contentView.frame.size.height;
-//    
-//    NSLog(@"Dynamic height: %f", height);
-//    
-    return 89;
+    [self configureCell:self.offscreenCell atIndexPath:indexPath];
+    [self.offscreenCell layoutSubviews];
+    CGFloat height = [self.offscreenCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    
+    NSLog(@"Dynamic height: %f", height);
+    
+    return height + 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
