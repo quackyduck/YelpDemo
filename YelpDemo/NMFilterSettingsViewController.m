@@ -17,6 +17,7 @@
 @property (strong, nonatomic) UILabel *filtersTitleLabel;
 @property (strong, nonatomic) NSArray *distanceOptions;
 @property (strong, nonatomic) NSArray *sortOptions;
+@property (strong, nonatomic) NSMutableDictionary *collapsed;
 @end
 
 
@@ -28,6 +29,7 @@
     if (self) {
         self.filtersTitleLabel = [[UILabel alloc] init];
         self.settings = [[NMFilterSettings alloc] init];
+        self.collapsed = [NSMutableDictionary dictionary];
     }
     return self;
 }
@@ -140,8 +142,16 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
     NSDictionary *layout = self.settings.layout[section];
     NSArray *rows = layout.allValues[0];
+    
+    if (section == 1) {
+        return [self.collapsed[@(section)] boolValue] ? 1 : rows.count;
+    }
+    
+    
+    
     return rows.count;
 }
 
@@ -163,6 +173,15 @@
     else if (indexPath.section == 1) {
         // Distance
         NMSettingsRadioCell *cell = [tableView dequeueReusableCellWithIdentifier:@"radioCell"];
+        
+        
+        
+        if (self.collapsed[@(indexPath.section)]) {
+            
+        }
+        
+        
+        
         NSArray *distanceOptions = layout.allValues[0];
         cell.titleLabel.text = distanceOptions[rowInSection];
         
@@ -176,6 +195,16 @@
         }
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         return cell;
     }
     else if (indexPath.section == 2) {
@@ -219,6 +248,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 1) {
+        
+        self.collapsed[@(indexPath.section)] = @(![self.collapsed[@(indexPath.section)] boolValue]);
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:UITableViewRowAnimationAutomatic];
+        
+        
         NMSettingsRadioCell* cell = (NMSettingsRadioCell *)[tableView cellForRowAtIndexPath:indexPath];
         if (cell.accessoryType == UITableViewCellAccessoryNone) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
