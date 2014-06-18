@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2CBF101950014900C53289 /* NMFilterSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2CBF0F1950014900C53289 /* NMFilterSettings.m */; };
+		0A2CBF141950223F00C53289 /* NMSettingsToggleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2CBF121950223F00C53289 /* NMSettingsToggleCell.m */; };
+		0A2CBF151950223F00C53289 /* NMSettingsToggleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2CBF131950223F00C53289 /* NMSettingsToggleCell.xib */; };
+		0A2CBF1E195028B000C53289 /* NMSettingsRadioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2CBF1C195028B000C53289 /* NMSettingsRadioCell.m */; };
+		0A2CBF1F195028B000C53289 /* NMSettingsRadioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2CBF1D195028B000C53289 /* NMSettingsRadioCell.xib */; };
 		0AA6C315194DF1120009B015 /* NMYelpListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA6C314194DF1120009B015 /* NMYelpListing.m */; };
 		0AA6C31F194DFFC30009B015 /* NMYelpListingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6C31D194DFFC30009B015 /* NMYelpListingCell.xib */; };
 		0AA6C322194E3F1B0009B015 /* NMYelpListingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA6C321194E3F1B0009B015 /* NMYelpListingCell.m */; };
@@ -42,6 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2CBF0E1950014900C53289 /* NMFilterSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMFilterSettings.h; sourceTree = "<group>"; };
+		0A2CBF0F1950014900C53289 /* NMFilterSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMFilterSettings.m; sourceTree = "<group>"; };
+		0A2CBF111950223F00C53289 /* NMSettingsToggleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMSettingsToggleCell.h; sourceTree = "<group>"; };
+		0A2CBF121950223F00C53289 /* NMSettingsToggleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSettingsToggleCell.m; sourceTree = "<group>"; };
+		0A2CBF131950223F00C53289 /* NMSettingsToggleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NMSettingsToggleCell.xib; sourceTree = "<group>"; };
+		0A2CBF1B195028B000C53289 /* NMSettingsRadioCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMSettingsRadioCell.h; sourceTree = "<group>"; };
+		0A2CBF1C195028B000C53289 /* NMSettingsRadioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSettingsRadioCell.m; sourceTree = "<group>"; };
+		0A2CBF1D195028B000C53289 /* NMSettingsRadioCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NMSettingsRadioCell.xib; sourceTree = "<group>"; };
 		0AA6C313194DF1120009B015 /* NMYelpListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMYelpListing.h; sourceTree = "<group>"; };
 		0AA6C314194DF1120009B015 /* NMYelpListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMYelpListing.m; sourceTree = "<group>"; };
 		0AA6C31D194DFFC30009B015 /* NMYelpListingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NMYelpListingCell.xib; sourceTree = "<group>"; };
@@ -199,6 +212,8 @@
 				0AFDA4AB194B678C00337A5C /* YelpClient.m */,
 				0AA6C313194DF1120009B015 /* NMYelpListing.h */,
 				0AA6C314194DF1120009B015 /* NMYelpListing.m */,
+				0A2CBF0E1950014900C53289 /* NMFilterSettings.h */,
+				0A2CBF0F1950014900C53289 /* NMFilterSettings.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -209,6 +224,12 @@
 				0AA6C320194E3F1B0009B015 /* NMYelpListingCell.h */,
 				0AA6C321194E3F1B0009B015 /* NMYelpListingCell.m */,
 				0AA6C31D194DFFC30009B015 /* NMYelpListingCell.xib */,
+				0A2CBF111950223F00C53289 /* NMSettingsToggleCell.h */,
+				0A2CBF121950223F00C53289 /* NMSettingsToggleCell.m */,
+				0A2CBF131950223F00C53289 /* NMSettingsToggleCell.xib */,
+				0A2CBF1B195028B000C53289 /* NMSettingsRadioCell.h */,
+				0A2CBF1C195028B000C53289 /* NMSettingsRadioCell.m */,
+				0A2CBF1D195028B000C53289 /* NMSettingsRadioCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -293,8 +314,10 @@
 			files = (
 				0AFDA4B6194B692700337A5C /* NMFilterSettingsViewController.xib in Resources */,
 				0AFDA437194B463600337A5C /* InfoPlist.strings in Resources */,
+				0A2CBF151950223F00C53289 /* NMSettingsToggleCell.xib in Resources */,
 				0AFDA462194B46B800337A5C /* NMSearchListingsViewController.xib in Resources */,
 				0AA6C31F194DFFC30009B015 /* NMYelpListingCell.xib in Resources */,
+				0A2CBF1F195028B000C53289 /* NMSettingsRadioCell.xib in Resources */,
 				0AFDA43F194B463600337A5C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +372,10 @@
 			files = (
 				0AFDA4BA194B6E6700337A5C /* NMFiltersNavigationController.m in Sources */,
 				0AFDA4AC194B678C00337A5C /* YelpClient.m in Sources */,
+				0A2CBF141950223F00C53289 /* NMSettingsToggleCell.m in Sources */,
+				0A2CBF101950014900C53289 /* NMFilterSettings.m in Sources */,
 				0AFDA4B5194B692700337A5C /* NMFilterSettingsViewController.m in Sources */,
+				0A2CBF1E195028B000C53289 /* NMSettingsRadioCell.m in Sources */,
 				0AFDA439194B463600337A5C /* main.m in Sources */,
 				0AFDA43D194B463600337A5C /* NMAppDelegate.m in Sources */,
 				0AA6C322194E3F1B0009B015 /* NMYelpListingCell.m in Sources */,

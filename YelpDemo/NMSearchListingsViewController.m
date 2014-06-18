@@ -91,7 +91,6 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
         for (NSDictionary *business in businesses) {
             NMYelpListing *listing = [[NMYelpListing alloc] initWithDictionary:business];
             [self.listingsArray addObject:listing];
-            NSLog(@"Business: %@", listing);
         }
         NSLog(@"%@", businesses);
         [self.tableView reloadData];
