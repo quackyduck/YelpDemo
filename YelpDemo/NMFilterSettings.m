@@ -16,7 +16,7 @@
                     @{@"Distance": @[@"Auto", @"2 blocks", @"6 blocks", @"1 mile", @"5 miles"]},
                     @{@"Sort by": @[@"Best Match", @"Distance", @"Rating", @"Most Reviewed"]},
                     @{@"General Features": @[
-                        @[@"mexian", @"Mexican"],
+                        @[@"mexican", @"Mexican"],
                         @[@"french", @"French"],
                         @[@"spanish", @"Spanish"],
                         @[@"icecream", @"Ice Cream"],
