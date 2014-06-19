@@ -81,14 +81,26 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
         NSDictionary *filters = [userDefaults objectForKey:@"FILTER_SETTINGS"];
         
         newFilters = [NSMutableDictionary dictionaryWithDictionary:filters];
+        // ugh sorry ...
         if ([newFilters[@"radius_filter"] isEqual:@(0)]) {
             [newFilters removeObjectForKey:@"radius_filter"];
+        }
+        else if ([newFilters[@"radius_filter"] isEqual:@(1)]) {
+            newFilters[@"radius_filter"] = @(200);
+        }
+        else if ([newFilters[@"radius_filter"] isEqual:@(2)]) {
+            newFilters[@"radius_filter"] = @(600);
+        }
+        else if ([newFilters[@"radius_filter"] isEqual:@(3)]) {
+            newFilters[@"radius_filter"] = @(1609);
+        }
+        else {
+            newFilters[@"radius_filter"] = @(8047);
         }
         
         NSArray *categories = newFilters[@"category_filter"];
         NSString *categoriesStr = [categories componentsJoinedByString:@","];
         newFilters[@"category_filter"] = categoriesStr;
-//        [self.searchParameters addEntriesFromDictionary:filters];
     }
     
     [self searchListings:newFilters];
@@ -105,6 +117,8 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     
     [self.searchParameters addEntriesFromDictionary:parameters];
     
+    NSLog(@"Search params: %@", self.searchParameters);
+    
     [self.client searchWithTerm:self.searchParameters success:^(AFHTTPRequestOperation *operation, id response) {
         
 //        if ([self.searchParameters valueForKey:@"offset"] == 0) {
@@ -117,7 +131,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
             NMYelpListing *listing = [[NMYelpListing alloc] initWithDictionary:business];
             [self.listingsArray addObject:listing];
         }
-        NSLog(@"%@", businesses);
+//        NSLog(@"%@", businesses);
         [self.tableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"error: %@", [error description]);
@@ -222,7 +236,6 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)theSearchBar {
-    NSLog(@"Search item: %@", theSearchBar.text);
     [self searchListings:@{@"term": theSearchBar.text}];
     [theSearchBar endEditing:YES];
 }

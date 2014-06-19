@@ -11,6 +11,7 @@
 #import "NMFilterSettings.h"
 #import "NMSettingsRadioCell.h"
 #import "NMSettingsToggleCell.h"
+#import "NMSeeAllCell.h"
 
 @interface NMFilterSettingsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -18,6 +19,7 @@
 @property (strong, nonatomic) NSArray *distanceOptions;
 @property (strong, nonatomic) NSArray *sortOptions;
 @property (strong, nonatomic) NSMutableDictionary *collapsed;
+@property (strong, nonatomic) NMSeeAllCell *seeAllCell;
 @end
 
 
@@ -29,7 +31,7 @@
     if (self) {
         self.filtersTitleLabel = [[UILabel alloc] init];
         self.settings = [[NMFilterSettings alloc] init];
-        self.collapsed = [NSMutableDictionary dictionary];
+        
     }
     return self;
 }
@@ -39,6 +41,11 @@
     [super viewDidLoad];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    self.collapsed = [NSMutableDictionary dictionary];
+    for (int i=0; i < self.settings.layout.count; i++) {
+        self.collapsed[@(i)] = @(YES);
+    }
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:self action:@selector(cancel:)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Search" style:UIBarButtonItemStyleBordered target:self action:@selector(search:)];
@@ -54,9 +61,15 @@
     
     UINib *toggleNib = [UINib nibWithNibName:@"NMSettingsToggleCell" bundle:nil];
     [self.tableView registerNib:toggleNib forCellReuseIdentifier:@"toggleCell"];
-
     
+    UINib *seeAllNib = [UINib nibWithNibName:@"NMSeeAllCell" bundle:nil];
+    [self.tableView registerNib:seeAllNib forCellReuseIdentifier:@"seeAllCell"];
+    
+    self.seeAllCell = [self.tableView dequeueReusableCellWithIdentifier:@"seeAllCell"];
+
 }
+
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -122,8 +135,6 @@
                         [newCategories removeObject:tuple[0]];
                     }
                 }
-                
-                
             }
         }
         self.settings.filters[@"category_filter"] = [NSMutableArray arrayWithArray:newCategories];
@@ -146,11 +157,12 @@
     NSDictionary *layout = self.settings.layout[section];
     NSArray *rows = layout.allValues[0];
     
-    if (section == 1) {
+    if (section == 1 || section == 2) {
         return [self.collapsed[@(section)] boolValue] ? 1 : rows.count;
     }
-    
-    
+    else if (section == 3) {
+        return [self.collapsed[@(section)] boolValue] ? 4 : rows.count;
+    }
     
     return rows.count;
 }
@@ -173,68 +185,83 @@
     else if (indexPath.section == 1) {
         // Distance
         NMSettingsRadioCell *cell = [tableView dequeueReusableCellWithIdentifier:@"radioCell"];
-        
-        
-        
-        if (self.collapsed[@(indexPath.section)]) {
-            
-        }
-        
-        
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
         NSArray *distanceOptions = layout.allValues[0];
-        cell.titleLabel.text = distanceOptions[rowInSection];
-        
         NSNumber *distance = self.settings.filters[@"radius_filter"];
-
-        if ([distance integerValue] == indexPath.row) {
+        
+        if ([self.collapsed[@(indexPath.section)] boolValue] == YES) {
+            // We are collapsed, show the selected item
+            cell.titleLabel.text = distanceOptions[[distance intValue]];
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
         }
         else {
-            cell.accessoryType = UITableViewCellAccessoryNone;
+            // We are expanded, show all the items in place
+            if ([distance integerValue] == indexPath.row) {
+                cell.accessoryType = UITableViewCellAccessoryCheckmark;
+            }
+            else {
+                cell.accessoryType = UITableViewCellAccessoryNone;
+            }
+            cell.titleLabel.text = distanceOptions[indexPath.row];
         }
-        
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         return cell;
     }
     else if (indexPath.section == 2) {
         // sort by
         NMSettingsRadioCell *cell = [tableView dequeueReusableCellWithIdentifier:@"radioCell"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
         NSArray *sortOptions = layout.allValues[0];
-        cell.titleLabel.text = sortOptions[rowInSection];
         NSNumber *sort = self.settings.filters[@"sort"];
         
-        if ([sort integerValue] == indexPath.row) {
+        if ([self.collapsed[@(indexPath.section)] boolValue]) {
+            // collapsed
+            cell.titleLabel.text = sortOptions[[sort intValue]];
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
         }
         else {
-            cell.accessoryType = UITableViewCellAccessoryNone;
+            // expanded
+            if ([sort integerValue] == indexPath.row) {
+                cell.accessoryType = UITableViewCellAccessoryCheckmark;
+            }
+            else {
+                cell.accessoryType = UITableViewCellAccessoryNone;
+            }
+            cell.titleLabel.text = sortOptions[rowInSection];
         }
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
         return cell;
     }
     else {
         // Categories
         NMSettingsToggleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"toggleCell"];
-        NSArray *categories = layout.allValues[0];
-        cell.titleLabel.text = categories[rowInSection][1];
-        NSString *internalCategoryName = categories[rowInSection][0];
-        
-        NSArray *existingCategories = self.settings.filters[@"category_filter"];
-        cell.toggleSwitch.on = [existingCategories containsObject:internalCategoryName];
-        
-        [cell.toggleSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        NSArray *categories = layout.allValues[0];
+        NSString *internalCategoryName = categories[rowInSection][0];
+        NSArray *existingCategories = self.settings.filters[@"category_filter"];
+        
+        if ([self.collapsed[@(indexPath.section)] boolValue]) {
+            // collapsed shows 4 cells - 3 plus the See All
+            if (rowInSection < 3) {
+                cell.titleLabel.text = categories[rowInSection][1];
+                cell.toggleSwitch.on = [existingCategories containsObject:internalCategoryName];
+                [cell.toggleSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
+            }
+            else {
+                // See All cell
+                return self.seeAllCell;
+            }
+        }
+        else {
+            // expanded
+            cell.titleLabel.text = categories[rowInSection][1];
+            cell.toggleSwitch.on = [existingCategories containsObject:internalCategoryName];
+            [cell.toggleSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
+        }
+
         return cell;
     }
     
@@ -249,25 +276,38 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 1) {
         
+        if (![self.collapsed[@(indexPath.section)] boolValue]) {
+            // Currently expanded
+            NMSettingsRadioCell* cell = (NMSettingsRadioCell *)[tableView cellForRowAtIndexPath:indexPath];
+            if (cell.accessoryType == UITableViewCellAccessoryNone) {
+                cell.accessoryType = UITableViewCellAccessoryCheckmark;
+                self.settings.filters[@"radius_filter"] = @(indexPath.row);
+            }
+        }
         self.collapsed[@(indexPath.section)] = @(![self.collapsed[@(indexPath.section)] boolValue]);
         [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:UITableViewRowAnimationAutomatic];
+        return;
+    }
+    else if (indexPath.section == 2) {
+        if (![self.collapsed[@(indexPath.section)] boolValue]) {
+            // Currently expanded
+            NMSettingsRadioCell* cell = (NMSettingsRadioCell *)[tableView cellForRowAtIndexPath:indexPath];
+            if (cell.accessoryType == UITableViewCellAccessoryNone) {
+                cell.accessoryType = UITableViewCellAccessoryCheckmark;
+                self.settings.filters[@"sort"] = @(indexPath.row);
+            }
+        }
         
-        
-        NMSettingsRadioCell* cell = (NMSettingsRadioCell *)[tableView cellForRowAtIndexPath:indexPath];
-        if (cell.accessoryType == UITableViewCellAccessoryNone) {
-            cell.accessoryType = UITableViewCellAccessoryCheckmark;
-            self.settings.filters[@"radius_filter"] = @(indexPath.row);
+        self.collapsed[@(indexPath.section)] = @(![self.collapsed[@(indexPath.section)] boolValue]);
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:UITableViewRowAnimationAutomatic];
+        return;
+    }
+    else if (indexPath.section == 3) {
+        if ([self.collapsed[@(indexPath.section)] boolValue]) {
+            self.collapsed[@(indexPath.section)] = @(![self.collapsed[@(indexPath.section)] boolValue]);
+            [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
     }
-    if (indexPath.section == 2) {
-        NMSettingsRadioCell* cell = (NMSettingsRadioCell *)[tableView cellForRowAtIndexPath:indexPath];
-        if (cell.accessoryType == UITableViewCellAccessoryNone) {
-            cell.accessoryType = UITableViewCellAccessoryCheckmark;
-            self.settings.filters[@"sort"] = @(indexPath.row);
-            
-        }
-    }
-    [tableView reloadData];
 }
 
 @end
