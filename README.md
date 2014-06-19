@@ -21,8 +21,10 @@ Notes:
 
 This week was a nightmare - work and travel. I still got to spend a lot of time on this project but didn't realize the filters view was going to be so labor-intensive. Fortunately, I got to spend a good amount of time on the auto-layout and UI aspects of the search view. Unfortunately, I didn't get to spend more time on UI polish which is what I enjoy.
 
+Round 2: Updated with fixes for collapsing filters and passing them back appropriately. 
+
 Walkthrough of all user stories:
 
-![Video Walkthrough](UserStoriesWeek2.gif)
+![Video Walkthrough](UserStoriesWeek2.2.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
