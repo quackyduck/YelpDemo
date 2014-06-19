@@ -2,7 +2,7 @@
 
 Yelp demo app. I took a lot of time to get the autolayout stuff good-ish. Filters are working but the collapsing may have introduced some bugs.
 
-Time spent: 20 hours spent in total
+Time spent: 21.5 hours spent in total
 
 Completed user stories:
 
